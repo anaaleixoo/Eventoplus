@@ -149,6 +149,14 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+//aplicar o serviço cognitivo 
+//Habilita o serviço de moderarador de conteudo do microsoft azure 
+builder.Services.AddSingleton(provider => new ContentModeratorClient(
+    new ApiKeyServiceClientCredentials("api key gerado no azure"))
+{
+    Endpoint = "adicionar o endpoint gerado no azure"
+});
+
 //Adiciona o Cors(política criada)
 app.UseCors("CorsPolicy");
 
