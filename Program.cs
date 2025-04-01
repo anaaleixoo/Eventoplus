@@ -79,8 +79,8 @@ builder.Services.AddSwaggerGen(options =>
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {
-            Name = "Carlos Roque",
-            Url = new Uri("https://www.linkedin.com/in/roquecarlos/")
+            Name = "Ana Aleixo",
+            Url = new Uri("https://github.com/anaaleixoo/Eventoplus.git")
         },
         License = new OpenApiLicense
         {
